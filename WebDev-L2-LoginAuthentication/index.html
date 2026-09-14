@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Task 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <main class="auth-container">
+        <div class="auth-card">
+            <div class="logo">🔐</div>
+
+            <h1>Welcome Back</h1>
+            <p class="subtitle">Login to your account</p>
+
+            <form id="loginForm">
+
+                <div class="form-group">
+                    <label for="loginIdentifier">Username or Email</label>
+                    <input
+                        type="text"
+                        id="loginIdentifier"
+                        placeholder="Enter username or email"
+                        autocomplete="username"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                    >
+                </div>
+
+                <p id="loginMessage" class="message"></p>
+
+                <button type="submit" class="btn">Login</button>
+
+            </form>
+
+            <p class="switch-page">
+                Don't have an account?
+                <a href="register.html">Create Account</a>
+            </p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
