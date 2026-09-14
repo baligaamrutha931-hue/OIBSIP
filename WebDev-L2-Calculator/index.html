@@ -1,1 +1,41 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator | Internship Task 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="calculator" aria-label="Calculator">
+      <header class="calculator-header">
+        <p class="calculator-label">Calculator</p>
+        <p class="expression" id="expression" aria-live="polite"></p>
+        <div class="display" id="display" role="status" aria-live="polite">0</div>
+      </header>
+      <div class="keypad" id="keypad">
+        <button type="button" class="btn btn-action" data-action="clear">C</button>
+        <button type="button" class="btn btn-action" data-action="backspace" aria-label="Backspace">⌫</button>
+        <button type="button" class="btn btn-operator" data-operator="÷">÷</button>
+        <button type="button" class="btn btn-operator" data-operator="×">×</button>
+        <button type="button" class="btn btn-number" data-number="7">7</button>
+        <button type="button" class="btn btn-number" data-number="8">8</button>
+        <button type="button" class="btn btn-number" data-number="9">9</button>
+        <button type="button" class="btn btn-operator" data-operator="−">−</button>
+        <button type="button" class="btn btn-number" data-number="4">4</button>
+        <button type="button" class="btn btn-number" data-number="5">5</button>
+        <button type="button" class="btn btn-number" data-number="6">6</button>
+        <button type="button" class="btn btn-operator" data-operator="+">+</button>
+        <button type="button" class="btn btn-number" data-number="1">1</button>
+        <button type="button" class="btn btn-number" data-number="2">2</button>
+        <button type="button" class="btn btn-number" data-number="3">3</button>
+        <button type="button" class="btn btn-equals" data-action="equals">=</button>
+        <button type="button" class="btn btn-number btn-zero" data-number="0">0</button>
+        <button type="button" class="btn btn-number" data-number=".">.</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
